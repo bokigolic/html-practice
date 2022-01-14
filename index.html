@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forma</title>
+    <title>Registration</title>
 </head>
 <body>
-    <h1>Form:</h1>
+    <h1>Mandatory registration for entry: </h1>  
+
     <form method="get" action="server.html">
 
-        <label for="UserName">Username:</label>
-        <input id="UserName" type="text" name="username" required><br><br>
+        <label for="username">  Name *</label>
+        <input type="text" name="username" id="username" required > <br><br><br>
+
+        <label for="lastname"> Last Name *</label>
+        <input type="text" name="lastname" id="lastname" required> <br><br><br>
+
+        <label for="email">Email *</label>
+        <input type="text" name="email" id="email" required > <br><br><br>
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="1">Female</option>
+            <option value="2">Male</option>
+        </select> <br><br><br>
+
+        <input type="submit" value="send"> 
 
 
-        <input id="Password" type="text" name="password" placeholder="Password"><br><br>
-        <input type="submit" value="Send"><br>
     </form>
 </body>
 </html>
